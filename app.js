@@ -16,6 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Temporary data store
 let posts = [];
 
+//routes
+app.get('/' , (req,res) => {
+    res.render('home' , {posts:posts});
+})
+
 app.listen(port, () => {
     console.log(`Blog app listening at http://localhost:${port}`);
 });
