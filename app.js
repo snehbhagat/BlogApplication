@@ -1,26 +1,13 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import path from 'path';
-
+import express from "express";
 const app = express();
 const port = 3000;
 
-// Set up EJS as the view engine
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
-// Middleware
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Temporary data store
-let posts = [];
-
-//routes
-app.get('/' , (req,res) => {
-    res.render('home' , {posts:posts});
+//Setting the main route
+app.get('/', (req,res) => {
+  res.send("Hello World");
 })
 
+//Starting the server
 app.listen(port, () => {
-    console.log(`Blog app listening at http://localhost:${port}`);
-});
+  console.log(`Listening on port no ${port}`);
+})
