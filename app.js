@@ -6,6 +6,9 @@ const app = express();
 const port = 3000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+app.use(express.static('public'));
+
 //Setting the main route
 app.get('/', (req,res) => {
   res.render(__dirname + '/views/pages/index.ejs');

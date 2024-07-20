@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&display=swap');
+/* Ensure header content is aligned horizontally */
+
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Distributes space between elements */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px;
+  background-color: #73b2f2;
+  border-bottom: 1px solid #ddd;
+  font-family: "Rubik Glitch Pop", system-ui;
+}
+
+.site-identity h2 a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.site-navigation .navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange list items horizontally */
+}
+
+.site-navigation .navbar li {
+  margin-right: 20px; /* Space between navigation items */
+}
+
+.site-navigation .navbar a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1em;
+  font-family: 'Montserrat',sans-serif;
+}
+.site-navigation .navbar a:hover {
+    text-decoration: underline;
+}
+.site-footer {
+  background-color: #93c3f3; /* Light background color */
+  padding: 20px;
+  text-align: center; /* Center-align text */
+  border-top: 1px solid #ddd; /* Border on top to separate from content */
+  font-family: 'Poppins',sans-serif;
+}
+.site-footer .site-identity {
+  margin: 0; /* Remove default margin */
+}
+.site-footer p {
+  margin: 0; /* Remove default margin */
+  color: whitesmoke; /* Text color */
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+.site-footer a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+.site-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+/* Optional: Responsive design */
+@media (max-width: 768px) {
+  .site-footer p {
+    font-size: 0.8em; /* Adjust font size on smaller screens */
+  }
+}
