@@ -1,6 +1,7 @@
 import express from "express";
 import { dirname } from 'path';
 import { fileURLToPath } from "url";
+import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
@@ -15,6 +16,22 @@ app.get('/', (req,res) => {
 })
 
 console.log(__dirname);
+
+let blogList = [];
+app.post('/home', (req,res) => {
+  const blogTitle = req.body.blogTitle;
+  const blogDescription = req.body.blogDes;
+  blogList.push({
+    id: generateId(),
+    title: blogTitle,
+    description: blogDescription,
+  })
+  res.render(post.ejs, {blogList: blogList});
+});
+
+function generateID() {
+  return Math.floor(Math.random() * 10000);
+}
 
 //Starting the server
 app.listen(port, () => {

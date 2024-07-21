@@ -12,24 +12,20 @@
   border-bottom: 1px solid #ddd;
   font-family: "Rubik Glitch Pop", system-ui;
 }
-
 .site-identity h2 a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.5em;
 }
-
 .site-navigation .navbar {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex; /* Arrange list items horizontally */
 }
-
 .site-navigation .navbar li {
   margin-right: 20px; /* Space between navigation items */
 }
-
 .site-navigation .navbar a {
   text-decoration: none;
   color: #007bff;
@@ -66,4 +62,85 @@
   .site-footer p {
     font-size: 0.8em; /* Adjust font size on smaller screens */
   }
+}
+h1{
+  text-align: center;
+  color: rgb(253, 214, 167);
+  font-family: 'Poppins',sans-serif;
+}
+/* Form Styles */
+.form-container {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background-color: whitesmoke ;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(108, 176, 244, 0.2);
+}
+
+.form-text {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #73b2f2;
+  box-shadow: 0 0 0 3px rgba(115, 178, 242, 0.1);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form input[type="submit"] {
+  padding: 0.75rem;
+  background-color: rgb(151, 248, 6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #5a9ee6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
 }

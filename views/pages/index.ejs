@@ -2,7 +2,6 @@
     <%- include('../partials/header.ejs') %>
     <h1 class="title">Welcome to my Blog App</h1>
     <div class="form-container">
-        <p class="form-text">Edit your Blog</p>
         <p class="form-text">Fill the form for creating your blog</p>
         <form action="/home" method="post">
             <label for="bTitle">Blog Title</label>
@@ -13,6 +12,7 @@
               placeholder="Your Title Here..."
               required
             />
+            <label for="bDes">Blog Description</label>
             <textarea
             type="text"
             id="bDes"
