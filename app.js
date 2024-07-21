@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 //Setting the main route
 app.get('/', (req,res) => {
-  res.render(__dirname + '/views/pages/index.ejs');
+  res.render(__dirname + '/views/pages/login.ejs');
 })
 
 console.log(__dirname);
